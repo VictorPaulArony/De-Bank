@@ -1,0 +1,229 @@
+/* Main container styles */
+.asset-locker {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    width: 140px;
+    background-color: #3b82f6;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo {
+    padding: 0 20px 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff6b6b;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  
+  .nav-item.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  
+  .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .nav-item-icon {
+    margin-right: 10px;
+    width: 18px;
+  }
+  
+  .logout {
+    margin-top: auto;
+    padding: 12px 20px;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+  }
+  
+  /* Main content area */
+  .content {
+    flex: 1;
+    background-color: white;
+    padding: 24px;
+  }
+  
+  .header {
+    margin-bottom: 24px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #111827;
+    margin: 0 0 20px;
+  }
+  
+  /* Asset summary boxes */
+  .asset-summary {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .asset-box {
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    padding: 16px;
+    width: 180px;
+  }
+  
+  .asset-box-title {
+    font-size: 14px;
+    margin-bottom: 8px;
+    opacity: 0.9;
+  }
+  
+  .asset-box-value {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  /* Statistics section */
+  .statistics {
+    margin-bottom: 24px;
+  }
+  
+  .statistics-title {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #4b5563;
+  }
+  
+  .chart {
+    height: 120px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    padding: 16px;
+    position: relative;
+  }
+  
+  .chart-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #e5e7eb;
+  }
+  
+  /* Lock sections */
+  .lock-sections {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .lock-section {
+    flex: 1;
+  }
+  
+  .section-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #111827;
+  }
+  
+  .input-wrapper {
+    margin-bottom: 12px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+  }
+  
+  .input-field:focus {
+    border-color: #3b82f6;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+  }
+  
+  .lock-button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+  }
+  
+  .lock-button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Transaction buttons */
+  .transaction-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+  }
+  
+  .transaction-button {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .fixed-transaction {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  .temp-transaction {
+    background-color: #6b7280;
+    color: white;
+  }
+  
+  /* Transaction history */
+  .transaction-history {
+    margin-top: 24px;
+  }
+  
+  .history-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #111827;
+  }
+  
+  .history-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
