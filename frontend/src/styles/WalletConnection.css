@@ -1,0 +1,93 @@
+.wallet-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-primary);
+  padding: 1rem;
+}
+
+.wallet-card {
+  max-width: 28rem;
+  width: 100%;
+  background-color: var(--bg-white);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.wallet-header {
+  text-align: center;
+}
+
+.wallet-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.wallet-subtitle {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.wallet-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.connect-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-white);
+  background-color: var(--primary);
+  transition: background-color 0.2s;
+}
+
+.connect-button:hover:not(:disabled) {
+  background-color: var(--primary-dark);
+}
+
+.connect-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.install-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  background-color: var(--bg-white);
+  transition: background-color 0.2s;
+}
+
+.install-button:hover {
+  background-color: var(--bg-gray-50);
+}
+
+.back-button {
+  margin-top: 1rem;
+  color: var(--bg-white);
+  text-decoration: none;
+}
+
+.back-button:hover {
+  color: var(--primary-dark);
+}
