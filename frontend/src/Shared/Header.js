@@ -1,6 +1,6 @@
 import React from 'react';
 import useWalletConnect from '../hooks/useWalletConnect';
-import { useTheme } from '../context/ThemeContext';
+import { useTheme } from '../contexts/ThemeContext';
 import '../styles/theme.css';
 
 function Header({ onMenuClick }) {
